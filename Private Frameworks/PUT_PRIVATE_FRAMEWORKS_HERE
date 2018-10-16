@@ -1,0 +1,4 @@
+Put NanoTimeKit.framwork and RelevanceEngine.framwork in this directory.
+
+You can find them inside Xcode bundle:
+/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/Library/CoreSimulator/Profiles/Runtimes/watchOS.simruntime/Contents/Resources/RuntimeRoot/System/Library/PrivateFrameworks/

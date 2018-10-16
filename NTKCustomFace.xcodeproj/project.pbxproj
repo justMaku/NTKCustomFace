@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E39357D217361B2002AE7B1 /* RelevanceEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39357B217361B2002AE7B1 /* RelevanceEngine.framework */; };
+		2E39357E217361B2002AE7B1 /* NanoTimeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E39357C217361B2002AE7B1 /* NanoTimeKit.framework */; };
+		2E6812012172086600B528F1 /* NTKCustomFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6812002172086600B528F1 /* NTKCustomFace.m */; };
+		2E68120621720B0B00B528F1 /* NTKCustomFaceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E68120521720B0B00B528F1 /* NTKCustomFaceView.m */; };
+		6FDF5E261B7E4A4B002ABBD8 /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDF5E251B7E4A4B002ABBD8 /* Loader.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6FC5B99E1B7E46F100E87B8D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2E3935752172209F002AE7B1 /* NanoTimeKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NanoTimeKit.h; sourceTree = "<group>"; };
+		2E39357B217361B2002AE7B1 /* RelevanceEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RelevanceEngine.framework; sourceTree = "<group>"; };
+		2E39357C217361B2002AE7B1 /* NanoTimeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NanoTimeKit.framework; sourceTree = "<group>"; };
+		2E393580217361DB002AE7B1 /* launcher.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = launcher.sh; sourceTree = "<group>"; };
+		2E393581217361DB002AE7B1 /* lldb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = lldb.py; sourceTree = "<group>"; };
+		2E6811FF2172086600B528F1 /* NTKCustomFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTKCustomFace.h; sourceTree = "<group>"; };
+		2E6812002172086600B528F1 /* NTKCustomFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTKCustomFace.m; sourceTree = "<group>"; };
+		2E68120421720B0B00B528F1 /* NTKCustomFaceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTKCustomFaceView.h; sourceTree = "<group>"; };
+		2E68120521720B0B00B528F1 /* NTKCustomFaceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTKCustomFaceView.m; sourceTree = "<group>"; };
+		6F7B7D011B81111C00AB713F /* Hooking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hooking.h; sourceTree = "<group>"; };
+		6FC5B9A01B7E46F100E87B8D /* NTKCustomFace.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = NTKCustomFace.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FDF5E251B7E4A4B002ABBD8 /* Loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Loader.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FC5B99D1B7E46F100E87B8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E39357E217361B2002AE7B1 /* NanoTimeKit.framework in Frameworks */,
+				2E39357D217361B2002AE7B1 /* RelevanceEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E39357721723B5B002AE7B1 /* Private Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E39357C217361B2002AE7B1 /* NanoTimeKit.framework */,
+				2E39357B217361B2002AE7B1 /* RelevanceEngine.framework */,
+			);
+			path = "Private Frameworks";
+			sourceTree = "<group>";
+		};
+		2E39357F217361C8002AE7B1 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2E393580217361DB002AE7B1 /* launcher.sh */,
+				2E393581217361DB002AE7B1 /* lldb.py */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		2E680E832172025E00B528F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FC5B9971B7E46F100E87B8D = {
+			isa = PBXGroup;
+			children = (
+				6FC5B9A21B7E46F100E87B8D /* NTKCustomFace */,
+				6FC5B9A11B7E46F100E87B8D /* Products */,
+				2E39357F217361C8002AE7B1 /* Scripts */,
+				2E39357721723B5B002AE7B1 /* Private Frameworks */,
+				2E680E832172025E00B528F1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6FC5B9A11B7E46F100E87B8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FC5B9A01B7E46F100E87B8D /* NTKCustomFace.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FC5B9A21B7E46F100E87B8D /* NTKCustomFace */ = {
+			isa = PBXGroup;
+			children = (
+				6F7B7D011B81111C00AB713F /* Hooking.h */,
+				6FDF5E251B7E4A4B002ABBD8 /* Loader.m */,
+				2E6811FF2172086600B528F1 /* NTKCustomFace.h */,
+				2E6812002172086600B528F1 /* NTKCustomFace.m */,
+				2E68120421720B0B00B528F1 /* NTKCustomFaceView.h */,
+				2E68120521720B0B00B528F1 /* NTKCustomFaceView.m */,
+				2E3935752172209F002AE7B1 /* NanoTimeKit.h */,
+			);
+			path = NTKCustomFace;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		2EEA2D1D21763EF9001D1C41 /* NTKCustomFaceLauncher */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 2EEA2D2021763EF9001D1C41 /* Build configuration list for PBXLegacyTarget "NTKCustomFaceLauncher" */;
+			buildPhases = (
+			);
+			buildToolPath = "$(SRCROOT)/launcher.sh";
+			buildWorkingDirectory = "/Users/maku/Documents/Projects/Open Source/NTKCustomFace";
+			dependencies = (
+			);
+			name = NTKCustomFaceLauncher;
+			passBuildSettingsInEnvironment = 1;
+			productName = NTKCustomFaceLauncher;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		6FC5B99F1B7E46F100E87B8D /* NTKCustomFace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC5B9A91B7E46F100E87B8D /* Build configuration list for PBXNativeTarget "NTKCustomFace" */;
+			buildPhases = (
+				6FC5B99C1B7E46F100E87B8D /* Sources */,
+				6FC5B99D1B7E46F100E87B8D /* Frameworks */,
+				6FC5B99E1B7E46F100E87B8D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NTKCustomFace;
+			productName = CustomWatchFaceTest;
+			productReference = 6FC5B9A01B7E46F100E87B8D /* NTKCustomFace.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FC5B9981B7E46F100E87B8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					2EEA2D1D21763EF9001D1C41 = {
+						DevelopmentTeam = Q7LB9QSYQ9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6FC5B99B1B7E46F100E87B8D /* Build configuration list for PBXProject "NTKCustomFace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6FC5B9971B7E46F100E87B8D;
+			productRefGroup = 6FC5B9A11B7E46F100E87B8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FC5B99F1B7E46F100E87B8D /* NTKCustomFace */,
+				2EEA2D1D21763EF9001D1C41 /* NTKCustomFaceLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FC5B99C1B7E46F100E87B8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FDF5E261B7E4A4B002ABBD8 /* Loader.m in Sources */,
+				2E6812012172086600B528F1 /* NTKCustomFace.m in Sources */,
+				2E68120621720B0B00B528F1 /* NTKCustomFaceView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2EEA2D1E21763EF9001D1C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Q7LB9QSYQ9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EEA2D1F21763EF9001D1C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Q7LB9QSYQ9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				MTL_FAST_MATH = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6FC5B9A71B7E46F100E87B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = watchos;
+			};
+			name = Debug;
+		};
+		6FC5B9A81B7E46F100E87B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = watchos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FC5B9AA1B7E46F100E87B8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Private Frameworks\"",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Private\\ Frameworks",
+					"$(PROJECT_DIR)/Private\\ Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					NanoTimeKit,
+					"-framework",
+					RelevanceEngine,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6FC5B9AB1B7E46F100E87B8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Private Frameworks\"",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Private\\ Frameworks",
+					"$(PROJECT_DIR)/Private\\ Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					NanoTimeKit,
+					"-framework",
+					RelevanceEngine,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EEA2D2021763EF9001D1C41 /* Build configuration list for PBXLegacyTarget "NTKCustomFaceLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EEA2D1E21763EF9001D1C41 /* Debug */,
+				2EEA2D1F21763EF9001D1C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC5B99B1B7E46F100E87B8D /* Build configuration list for PBXProject "NTKCustomFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC5B9A71B7E46F100E87B8D /* Debug */,
+				6FC5B9A81B7E46F100E87B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC5B9A91B7E46F100E87B8D /* Build configuration list for PBXNativeTarget "NTKCustomFace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC5B9AA1B7E46F100E87B8D /* Debug */,
+				6FC5B9AB1B7E46F100E87B8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FC5B9981B7E46F100E87B8D /* Project object */;
+}
